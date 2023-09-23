@@ -962,7 +962,7 @@ if (blackKingDead)
 {
     system("cls");
     render();
-    printf("\n\n !!! WHITE HAS WON THE GAME !!!");
+    printf("\n\n !!! WHITE HAS WON THE GAME !!!\n(The game history is saves locally as chessGameHistory.txt)");
     fprintf(fptr , "\n\n!!! WHITE HAS WON THE GAME !!!\n\n\nGame Ended -> %s" , tstr);
     gameMode = false;
 }
@@ -971,7 +971,7 @@ if (whiteKingDead)
 {
     system("cls");
     render();
-    printf("\n\n !!! BLACK HAS WON THE GAME !!!");
+    printf("\n\n !!! BLACK HAS WON THE GAME !!!\n(The game history is saves locally as chessGameHistory.txt)");
     fprintf(fptr , "\n\n!!! BLACK HAS WON THE GAME !!!\n\n\nGame Ended -> %s" , tstr);
     gameMode = false;
 }
