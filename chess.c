@@ -1066,13 +1066,13 @@ printf("\nWHITE'S TURN: \n\n");
 else
 printf("\nBLACK'S TURN: \n\n");
 
-printf("CHOOSE THE PIECE (i , j) : ");
+printf("CHOOSE THE PIECE IN THE FORMAT -> i <SPACE> j \n");
 scanf("%d %d" , &pieceX , &pieceY);
 
 //APPLYING BOUNDS CHECK
 if (!boundsCheck(pieceX , pieceY))
 {
-printf("PLEASE CHOOSE THE CORRECT INDEX IN THE FORMAT : i <SPACE> j \n");
+printf("PLEASE CHOOSE THE CORRECT INDEX \n");
 system("pause");
 continue;
 }
@@ -1088,7 +1088,7 @@ system("pause");
 continue;
 }
 
-printf("\nENTER THE DESTINATION OF THE PIECE IN THE FORMAT : i <SPACE> j (ENTER -1 <space> -1 TO CHANGE THE CHOSEN PIECE)  : ");
+printf("\nENTER THE DESTINATION OF THE PIECE IN THE FORMAT -> i <SPACE> j (ENTER -1 <space> -1 TO CHANGE THE CHOSEN PIECE)  : ");
 scanf("%d %d" , &moveX , &moveY);
 
 //APPLYING CHECKS ON THE DESTINATION
@@ -1096,13 +1096,13 @@ if ((moveX == -1) && (moveY == -1))
 continue;
 if (!boundsCheck(moveX , moveY))
 {
-printf("PLEASE CHOOSE THE CORRECT INDEX (i , j) \n");
+printf("PLEASE CHOOSE THE CORRECT INDEX \n");
 system("pause");
 continue;
 }
 if ((moveX == pieceX) && (moveY == pieceY))
 {
-printf("DESTINATION IS SAME AS PREVIOUS POSITION, CHOOSE OTHER POSITION (i , j) \n");
+printf("DESTINATION IS SAME AS PREVIOUS POSITION, CHOOSE OTHER POSITION \n");
 system("pause");
 continue;
 }
