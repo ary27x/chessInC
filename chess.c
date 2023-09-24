@@ -1066,7 +1066,7 @@ printf("\nWHITE'S TURN: \n\n");
 else
 printf("\nBLACK'S TURN: \n\n");
 
-printf("\nCHOOSE THE PIECE IN THE FORMAT -> i <SPACE> j  : ");
+printf("CHOOSE THE PIECE IN THE FORMAT -> i <SPACE> j  : ");
 scanf("%d %d" , &pieceX , &pieceY);
 
 //APPLYING BOUNDS CHECK
