@@ -1072,7 +1072,7 @@ scanf("%d %d" , &pieceX , &pieceY);
 //APPLYING BOUNDS CHECK
 if (!boundsCheck(pieceX , pieceY))
 {
-printf("PLEASE CHOOSE THE CORRECT INDEX (i , j) \n");
+printf("PLEASE CHOOSE THE CORRECT INDEX IN THE FORMAT : i <SPACE> j \n");
 system("pause");
 continue;
 }
@@ -1088,7 +1088,7 @@ system("pause");
 continue;
 }
 
-printf("\nENTER THE DESTINATION OF THE PIECE (i , j) (ENTER -1 , -1 TO CHANGE THE CHOSEN PIECE)  : ");
+printf("\nENTER THE DESTINATION OF THE PIECE IN THE FORMAT : i <SPACE> j (ENTER -1 <space> -1 TO CHANGE THE CHOSEN PIECE)  : ");
 scanf("%d %d" , &moveX , &moveY);
 
 //APPLYING CHECKS ON THE DESTINATION
